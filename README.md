@@ -1,6 +1,8 @@
 
 # Modeling Our Data 
 
+## Introduction 
+
 In this lesson we shall look at the modeling process for running regression or similar statistical experiments. We have looked at most of the modeling techniques in last two sections. This lesson will helop you combine all those steps and develop a framework of running an experiment. 
 
 ## Objectives
@@ -10,9 +12,7 @@ You will be able to:
 * Understand that modeling is an iterative process
 * Identify target variables and predictor variables
 
-Before you gather and look at the data...
-
-Building a Regression Model: An Outline
+Following steps will provide you with outline for building a regression model, iterating through different stages of model development and communicating the outcome of the experiments, 
 
 ### Step1: Identify an analytical/research question of interest which would be the goal of your analysis.
 
