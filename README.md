@@ -12,6 +12,8 @@ You will be able to:
 * Understand that modeling is an iterative process
 * Identify target variables and predictor variables
 
+## Model Development 
+
 Following steps will provide you with outline for building a regression model, iterating through different stages of model development and communicating the outcome of the experiments, 
 
 ### Step1: Identify an analytical/research question of interest which would be the goal of your analysis.
