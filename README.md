@@ -134,4 +134,4 @@ Like e mentioned earlier and saw with some examples that linear regression can n
 
 ## Summary 
 
-In this lesson, we looked at the key steps towards building and evaluating a linear regression model. All the key stages highlighted in this lesson have been covered in detail in the previous sections. More details on these topics will be provided as we move towards advanced statistics. 
+In this lesson, we looked at the key steps towards building and evaluating a linear regression model. The first four key stages highlighted in this lesson have been covered in detail in the previous sections, and we'll move into modeling next. 
