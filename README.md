@@ -3,7 +3,7 @@
 
 ## Introduction 
 
-In this lesson we shall look at the modeling process for running regression or similar statistical experiments. We have looked at most of the modeling techniques in last two sections. This lesson will helop you combine all those steps and develop a framework of running an experiment. 
+In this lesson we will look at the modeling process for running regression or similar statistical experiments. We have looked at most of the modeling techniques in last two sections. This lesson will help you combine all those steps and develop a framework of running an experiment. 
 
 ## Objectives
 You will be able to:
@@ -29,7 +29,7 @@ Steps to developing a research question:
 
 * Choose an interesting general topic.  
 
-A good example of a general topic might be “ Use of mobile phones in the American Teens” or “10 Most profitable products in first quarter of 2018.”
+A good example of a general topic might be "Use of mobile phones in the American Teens" or "10 Most profitable products in first quarter of 2018."
 
 * Do some preliminary research on the domain under examination. 
 
@@ -42,7 +42,7 @@ For most data science projects, your audience will be analysts or domain experts
 
 * Start asking questions. 
 
-Once you have achieved all of above, start asking general “how” and “why” questions about your topic. For example, “ How do teens use mobile phones in their daily routines? ” or “ What makes a product profitable? ”. So you see a bit of domain knowledge creeping again. 
+Once you have achieved all of above, start asking general "how" and "why" questions about your topic. For example, “ How do teens use mobile phones in their daily routines?" or "What makes a product profitable?". So you see a bit of domain knowledge creeping again. 
 
 * Evaluate your question. 
             
@@ -68,7 +68,7 @@ So we do now have a question to answer , along with a n initial indication on ho
 
 <img src="pop.jpg" width=400>
 
-In the upcoming sections on stats, we shall cover topics like sampling from populations, sampling errors, sample size requirements etc. For now , we must understand that we usually work eith samples of data instead of populations. And when we try to infer something about the population based on the sample data that we analyzed, we have to make sure that our inference and predictions can be generalized for a larger population.
+In the upcoming sections on stats, we will cover topics like sampling from populations, sampling errors, sample size requirements etc. For now , we must understand that we usually work with samples of data instead of populations. And when we try to infer something about the population based on the sample data that we analyzed, we have to make sure that our inference and predictions can be generalized for a larger population.
 
 ### Step 4: EDA - Assess relationships (uni-variate and bi-variate)
 
@@ -107,7 +107,7 @@ In addition to above you can also use visual aids to better evaluate your model 
 
 ### Step 6: Revise the fitted model.
 
-Revision of the model mainly depends on how we choose our initial model and how we interpret the outcomes from the initial experiment. For regression specific analysis, specially when are dealing with multiple regression, multi-collinearity is always a big issue and it cant be avoided totally. Multicollinearity can also obsecure the effect of predictors in a regression mode.  We tend to revise a regression model based on the selection of predictors and how they tend to correlate with each other. 
+Revision of the model mainly depends on how we choose our initial model and how we interpret the outcomes from the initial experiment. For regression specific analysis, specially when are dealing with multiple regression, multi-collinearity is always a big issue and it cant be avoided totally. Multicollinearity can also obscure the effect of predictors in a regression mode.  We tend to revise a regression model based on the selection of predictors and how they tend to correlate with each other. 
 
 Predictive capability of a model is a great measure to identify and see if the effect of a revision actually improves or worsens some measure of predictive loss like root mean squared error. 
 
@@ -121,7 +121,7 @@ In addition to above, we can also consider following:
 
 ### Step 7: Repeat above step until satisfied
 
-So once we have iterated through the process mentioned above, and have some level of confidence in the out come and its predictive capabilities, we can further streamline the outcomes to make sure that we can interpret and communicate the end result in a domain spefic manner. The description of the model and its outcomes must always be in the terms of original analytical question asked. 
+So once we have iterated through the process mentioned above, and have some level of confidence in the out come and its predictive capabilities, we can further streamline the outcomes to make sure that we can interpret and communicate the end result in a domain specific manner. The description of the model and its outcomes must always be in the terms of original analytical question asked. 
 
 We also have to make sure that we clearly understand the goodness of fit for our final model and the residuals are checked and explained in detail. 
 
