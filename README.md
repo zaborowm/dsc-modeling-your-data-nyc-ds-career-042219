@@ -677,7 +677,6 @@ Again recall that we should check to ensure that our residuals are normally dist
 
 ```python
 import statsmodels.api as sm
-# import statsmodels.stats.api as sms
 import scipy.stats as stats
 ```
 
