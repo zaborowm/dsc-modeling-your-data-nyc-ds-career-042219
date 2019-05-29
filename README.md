@@ -373,11 +373,11 @@ model.summary()
 
 ## Assessing the Model
  
-When performing an initial assessment of the model you might focus on a number of different perspectives. There are metrics assessing the overall accuracy of the model including $r^2$ and mean square error. There are also many metrics when analyzing how various features contribute to the overall model. These are essential to building a story and intuition behind the model so that educated business strategies can be implemented to optimize the target variable. After all, typically you aren't soley interested in predicting a quantity in a blakc box given said information. Rather, you would often like to know the underlying influencers and how those can be adjusted in order to increase or decrease the final measured quanity whether it be sales, customer base, costs or risk. Such metrics would include p-values associated with the various features, comparing models with features removed and investigating potential multicollinearity in the model. Muliticollinearity also touches upon checking model assumptions. One underlying intuition motivating the regression model is that the features constitute a *set of levers* which, if appropriately adjusted, account for the target variable. The theory then goes that the errors should be simply the cause of noise in our measurements, or smaller unaccounted factors. These errors are then assumed to be normally distributed. 
+When performing an initial assessment of the model you might focus on a number of different perspectives. There are metrics assessing the overall accuracy of the model including $r^2$ and mean square error. There are also many metrics when analyzing how various features contribute to the overall model. These are essential to building a story and intuition behind the model so that educated business strategies can be implemented to optimize the target variable. After all, typically you aren't solely interested in predicting a quantity in a black box given said information. Rather, you would often like to know the underlying influencers and how those can be adjusted in order to increase or decrease the final measured quantity whether it be sales, customer base, costs or risk. Such metrics would include p-values associated with the various features, comparing models with features removed and investigating potential multicollinearity in the model. Multicollinearity also touches upon checking model assumptions. One underlying intuition motivating the regression model is that the features constitute a *set of levers* which, if appropriately adjusted, account for the target variable. The theory then goes that the errors should be simply the cause of noise in our measurements, or smaller unaccounted factors. These errors are then assumed to be normally distributed. 
 
 ## Comments on P-Values
 
-Based on the p-values above, you can see that there are a number of extraneous features. Recall that a common signifigance cutoff is 0.05. The refined model should eliminate these irrelevant features.
+Based on the p-values above, you can see that there are a number of extraneous features. Recall that a common significance cutoff is 0.05. The refined model should eliminate these irrelevant features.
 
 ## Initial Refinement
 
@@ -461,7 +461,7 @@ model.summary()
 
 
 
-> **Comments:** Note that while the $r^2$ value did drop, it did so only marginally despite dropping 6/10 of the orignal features. Additionally, all of the p-values indicate that all of the current features are substantially influential.
+> **Comments:** Note that while the $r^2$ value did drop, it did so only marginally despite dropping 6/10 of the original features. Additionally, all of the p-values indicate that all of the current features are substantially influential.
 
 ## Additional Assessments and Refinement
 
@@ -588,7 +588,7 @@ list(zip(x_cols, vif))
 
 
 
-> **Comment:** This is a modelling choice. Clearly there are advantages and tradebacks to the two approaches. On the one hand, removing the weight component has substantially diminished the model's performance. On the other hand, multicollinearity between the features has been reduced. For now, let's opt for the previous version of the model which does suffer from some multicollinearity, which could impact model interpretation, but produces a more accurate model overall.
+> **Comment:** This is a modeling choice. Clearly there are advantages and tradebacks to the two approaches. On the one hand, removing the weight component has substantially diminished the model's performance. On the other hand, multicollinearity between the features has been reduced. For now, let's opt for the previous version of the model which does suffer from some multicollinearity, which could impact model interpretation, but produces a more accurate model overall.
 
 
 ```python
@@ -712,7 +712,7 @@ plt.plot(model.predict(df[x_cols]), [0 for i in range(len(df))])
 ![png](index_files/index_27_1.png)
 
 
-> **Comment:** There appears to be some issues with high outliers displaying disprportionate errors. Further work with outliers could be warranted.
+> **Comment:** There appears to be some issues with high outliers displaying disproportionate errors. Further work with outliers could be warranted.
 
 ## Model Refinement III
  
@@ -852,7 +852,7 @@ plt.plot(model.predict(subset[x_cols]), [0 for i in range(len(subset))])
 ![png](index_files/index_35_1.png)
 
 
-> **Comments:** Awesome! The normality assumption as seen through the Q-Q plot appears improved. Similarly, there are no discernable patterns in the residuals, having removed some of the heavy outliers. There was marginal loss in model performance despite subsetting the data.
+> **Comments:** Awesome! The normality assumption as seen through the Q-Q plot appears improved. Similarly, there are no discernible patterns in the residuals, having removed some of the heavy outliers. There was marginal loss in model performance despite subsetting the data.
 
 ## Summary 
 
